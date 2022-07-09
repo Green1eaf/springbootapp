@@ -23,7 +23,7 @@ public class Meal {
     private String name;
 
     @Column(name = "date_time")
-    private LocalDateTime dateTime;
+    private LocalDateTime dateTime = LocalDateTime.now();
 
     @Column(name = "calories")
     private int calories;

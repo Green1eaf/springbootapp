@@ -7,6 +7,6 @@ create table meals
 (
     id INTEGER PRIMARY KEY DEFAULT nextval('global_seq'),
     name TEXT NOT NULL,
-    date_time TIMESTAMP NOT NULL,
+    date_time TIMESTAMP DEFAULT now(),
     calories INT NOT NULL
 );
